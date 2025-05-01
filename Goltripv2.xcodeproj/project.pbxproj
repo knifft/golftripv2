@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9B54C4092DA646C300E73E67 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B54C4082DA646C300E73E67 /* FirebaseStorage */; };
+		9BA505B32DA5C43B00CA91D1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA505B22DA5C43B00CA91D1 /* FirebaseAuth */; };
+		9BA505B52DA5C43B00CA91D1 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA505B42DA5C43B00CA91D1 /* FirebaseCore */; };
+		9BA505BD2DA5D06B00CA91D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA505BC2DA5D06B00CA91D1 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9B9B654C2DA5A3C800CA8E35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,23 @@
 		9B9B65552DA5A3C800CA8E35 /* Goltripv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goltripv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9B9B658D2DA5B97500CA8E35 /* Exceptions for "Goltripv2" folder in "Goltripv2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				config/Info.plist,
+				Untitled.swift,
+			);
+			target = 9B9B653D2DA5A3C800CA8E35 /* Goltripv2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9B9B65402DA5A3C800CA8E35 /* Goltripv2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9B9B658D2DA5B97500CA8E35 /* Exceptions for "Goltripv2" folder in "Goltripv2" target */,
+			);
 			path = Goltripv2;
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA505B52DA5C43B00CA91D1 /* FirebaseCore in Frameworks */,
+				9B54C4092DA646C300E73E67 /* FirebaseStorage in Frameworks */,
+				9BA505B32DA5C43B00CA91D1 /* FirebaseAuth in Frameworks */,
+				9BA505BD2DA5D06B00CA91D1 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +103,7 @@
 				9B9B65402DA5A3C800CA8E35 /* Goltripv2 */,
 				9B9B654E2DA5A3C800CA8E35 /* Goltripv2Tests */,
 				9B9B65582DA5A3C800CA8E35 /* Goltripv2UITests */,
+				9B9B657B2DA5A6D400CA8E35 /* Frameworks */,
 				9B9B653F2DA5A3C800CA8E35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +116,13 @@
 				9B9B65552DA5A3C800CA8E35 /* Goltripv2UITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9B9B657B2DA5A6D400CA8E35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +145,10 @@
 			);
 			name = Goltripv2;
 			packageProductDependencies = (
+				9BA505B22DA5C43B00CA91D1 /* FirebaseAuth */,
+				9BA505B42DA5C43B00CA91D1 /* FirebaseCore */,
+				9BA505BC2DA5D06B00CA91D1 /* FirebaseFirestore */,
+				9B54C4082DA646C300E73E67 /* FirebaseStorage */,
 			);
 			productName = Goltripv2;
 			productReference = 9B9B653E2DA5A3C800CA8E35 /* Goltripv2.app */;
@@ -195,6 +232,9 @@
 			);
 			mainGroup = 9B9B65352DA5A3C800CA8E35;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9B9B657A2DA5A6C100CA8E35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B9B653F2DA5A3C800CA8E35 /* Products */;
 			projectDirPath = "";
@@ -395,23 +435,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3VFRMD8884;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Goltripv2/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.Goltripv2;
+				PRODUCT_BUNDLE_IDENTIFIER = "golftrip-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,23 +467,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3VFRMD8884;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Goltripv2/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.Goltripv2;
+				PRODUCT_BUNDLE_IDENTIFIER = "golftrip-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +606,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B9B657A2DA5A6C100CA8E35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B54C4082DA646C300E73E67 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B9B657A2DA5A6C100CA8E35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		9BA505B22DA5C43B00CA91D1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B9B657A2DA5A6C100CA8E35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9BA505B42DA5C43B00CA91D1 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B9B657A2DA5A6C100CA8E35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		9BA505BC2DA5D06B00CA91D1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B9B657A2DA5A6C100CA8E35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B9B65362DA5A3C800CA8E35 /* Project object */;
 }
