@@ -41,7 +41,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				config/Info.plist,
-				Untitled.swift,
 			);
 			target = 9B9B653D2DA5A3C800CA8E35 /* Goltripv2 */;
 		};
