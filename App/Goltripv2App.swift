@@ -37,7 +37,7 @@ struct Golftripv2App: App {
     @StateObject var router = NavigationRouter()
 
     init() {
-        FirebaseApp.configure()
+        FirebaseService.shared.configure()
     }
 
     var body: some Scene {
