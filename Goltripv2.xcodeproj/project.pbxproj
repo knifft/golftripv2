@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B33E65E2DC326750099D1E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B33E65C2DC326750099D1E8 /* GoogleService-Info.plist */; };
 		9B33E6612DC326750099D1E8 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B33E65D2DC326750099D1E8 /* Secrets.plist */; };
 		9B33E6912DC326CB0099D1E8 /* NavHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B33E6892DC326CB0099D1E8 /* NavHeaderView.swift */; };
 		9B33E6922DC326CB0099D1E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B33E67D2DC326CB0099D1E8 /* LoginView.swift */; };
@@ -63,7 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B33E65C2DC326750099D1E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B33E65D2DC326750099D1E8 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		9B33E6682DC326CB0099D1E8 /* Goltripv2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goltripv2App.swift; sourceTree = "<group>"; };
 		9B33E66A2DC326CB0099D1E8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -280,7 +278,6 @@
 		9B33E6AF2DC327700099D1E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9B33E65C2DC326750099D1E8 /* GoogleService-Info.plist */,
 				9B33E65D2DC326750099D1E8 /* Secrets.plist */,
 				9B33E6B12DC327A90099D1E8 /* FireBaseConfig */,
 			);
@@ -450,7 +447,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B33E65E2DC326750099D1E8 /* GoogleService-Info.plist in Resources */,
 				9B33E6612DC326750099D1E8 /* Secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

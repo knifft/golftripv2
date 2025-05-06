@@ -76,3 +76,6 @@ Package.resolved
 
 # Firebase secrets
 GoogleService-Info.plist
+
+**/GoogleService-Info.plist
+
