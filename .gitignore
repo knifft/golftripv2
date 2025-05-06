@@ -79,3 +79,6 @@ GoogleService-Info.plist
 
 **/GoogleService-Info.plist
 
+**/Secrets.plist
+
+

@@ -93,27 +93,15 @@
 		9B33E68C2DC326CB0099D1E8 /* CareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerView.swift; sourceTree = "<group>"; };
 		9B33E68D2DC326CB0099D1E8 /* LogRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRoundView.swift; sourceTree = "<group>"; };
 		9B33E68E2DC326CB0099D1E8 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		9B33E6B02DC327A90099D1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B9B653E2DA5A3C800CA8E35 /* Goltripv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goltripv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9B654B2DA5A3C800CA8E35 /* Goltripv2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goltripv2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9B65552DA5A3C800CA8E35 /* Goltripv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goltripv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9B33E6B22DC327A90099D1E8 /* Exceptions for "FireBaseConfig" folder in "Goltripv2" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 9B9B653D2DA5A3C800CA8E35 /* Goltripv2 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9B33E6B12DC327A90099D1E8 /* FireBaseConfig */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				9B33E6B22DC327A90099D1E8 /* Exceptions for "FireBaseConfig" folder in "Goltripv2" target */,
-			);
 			path = FireBaseConfig;
 			sourceTree = "<group>";
 		};
@@ -279,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				9B33E65D2DC326750099D1E8 /* Secrets.plist */,
+				9B33E6B02DC327A90099D1E8 /* Info.plist */,
 				9B33E6B12DC327A90099D1E8 /* FireBaseConfig */,
 			);
 			path = Resources;
@@ -667,7 +656,7 @@
 				DEVELOPMENT_TEAM = 3VFRMD8884;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Goltripv2/Config/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -699,7 +688,7 @@
 				DEVELOPMENT_TEAM = 3VFRMD8884;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Goltripv2/Config/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
